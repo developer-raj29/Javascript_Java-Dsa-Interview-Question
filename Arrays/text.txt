@@ -1,0 +1,18 @@
+
+function outerFunc(){
+    let value = 0;
+    let str = "I'm a string";
+
+    function innerFunc(){
+        console.log("Value : ", value++);
+        console.log(str);
+    }
+
+    return innerFunc;
+}
+
+const callFunc = outerFunc();
+
+for(let i = 0 ; i < 5; i++){
+    callFunc();
+}
