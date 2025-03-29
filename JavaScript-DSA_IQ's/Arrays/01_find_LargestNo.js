@@ -29,3 +29,11 @@ arr.forEach((num) => {
 });
 
 console.log("Max Value:", max_Value); // Output: 90
+
+/*
+ * Approache:
+ * 1. check Largest or max value is less than current value {arr[i]}. toh update
+ * largest or max value assign karo current value {arr[i]} ko.
+ * if(largest < arr[i]) largest = arr[i];
+ * 2. return largest value.
+ */
