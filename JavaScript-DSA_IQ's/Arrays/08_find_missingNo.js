@@ -9,10 +9,11 @@ function missingNo(arr) {
 }
 
 const arr = [3, 0, 1];
+// const arr = [0, 1, 2, 3, 5]; // Missing number is 2
 console.log(missingNo(arr)); // Output: 2
 
 /*
- * Approach:
+ * Approach: Note-> 0 is included compulsory in the array.
  * 1. find length of array and store it N.
  * 2. find the summation of using formula (N*(N+1))/2.
  * 3. create a variable sum2 and initialize it to 0.

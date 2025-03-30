@@ -1,14 +1,14 @@
-// const arr = [1, 2, 4, 6, 7, 10];
-// const missing = [];
+const arr1 = [1, 2, 4, 6, 7, 10];
+const missing = [];
 
-// for (let i = 1; i <= 10; i++) {
-//   console.log(!arr.includes(i));
-//   if (!arr.includes(i)) {
-//     missing.push(i);
-//   }
-// }
+for (let i = 1; i <= 10; i++) {
+  // console.log(!arr1.includes(i));
+  if (!arr1.includes(i)) {
+    missing.push(i);
+  }
+}
 
-// console.log("Missing Numbers:", missing); // ➤ Missing Numbers: [3, 5, 8, 9]
+console.log("Missing Numbers:", missing); // ➤ Missing Numbers: [3, 5, 8, 9]
 
 const arr = [
   "apple",

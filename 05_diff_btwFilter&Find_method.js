@@ -1,7 +1,7 @@
 const employee = [
+  { name: "honey", age: 31 },
   { name: "rohan", age: 34 },
   { name: "ravi", age: 20 },
-  { name: "honey", age: 31 },
   { name: "ruhan", age: 25 },
   { name: "rashi", age: 58 },
 ];
