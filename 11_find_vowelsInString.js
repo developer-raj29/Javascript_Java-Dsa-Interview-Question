@@ -13,8 +13,8 @@ function vowelsFun(str) {
     }
   }
 
-  //   return res.join("");
-  return res;
+  return res.join("");
+  // return res;
 }
 
 /*
