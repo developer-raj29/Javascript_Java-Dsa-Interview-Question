@@ -54,21 +54,3 @@ function outerFun() {
 // for (let i = 0; i < 5; i++) {
 //   inner(); // ➤ Value: 0, String: I am a string
 // }
-
-function outerFunc() {
-  let value = 0;
-  let str = "I'm a string";
-
-  function innerFunc() {
-    console.log("Value : ", value++);
-    console.log(str);
-  }
-
-  return innerFunc;
-}
-
-// const callFunc = outerFunc();
-
-// for (let i = 0; i < 5; i++) {
-//   callFunc();
-// }
