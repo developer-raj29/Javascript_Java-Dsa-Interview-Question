@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class _05_LC_189_Rotate_Array {
     public static void rotate(int[] nums, int k) {
         k = k % nums.length;
@@ -33,15 +35,34 @@ public class _05_LC_189_Rotate_Array {
      */
 
     public static void main(String[] args) {
-        int nums[] = { 1, 2, 3, 4, 5, 6, 7 };
-        int k = 3;
-        rotate(nums, k);
+        // int nums[] = { 1, 2, 3, 4, 5, 6, 7 };
+        // int k = 3;
+        // rotate(nums, k);
 
-        // int X = k % 7;
-        // System.out.println(X);
+        // // int X = k % 7;
+        // // System.out.println(X);
 
-        for (int i = 0; i < nums.length; i++) {
-            System.out.print(nums[i] + " "); // 5 6 7 1 2 3 4
+        // for (int i = 0; i < nums.length; i++) {
+        // System.out.print(nums[i] + " "); // 5 6 7 1 2 3 4
+        // }
+
+        Scanner sc = new Scanner(System.in);
+
+        int input = sc.nextInt();
+        int k = sc.nextInt();
+
+        int arr[] = new int[input];
+
+        for (int i = 0; i < input; i++) {
+            arr[i] = sc.nextInt();
         }
+
+        rotate(arr, k);
+
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+
+        sc.close();
     }
 }
