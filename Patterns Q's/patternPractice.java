@@ -197,6 +197,71 @@ public class patternPractice {
         }
     }
 
+    /*
+     * - - -1
+     * - - 2 2
+     * - -3 3 3
+     * - 4 4 4 4
+     * -5 5 5 5 5
+     */
+    public static void pattern12(int n) {
+        for (int i = 1; i <= n; i++) { // outer loop
+            for (int j = 1; j <= n - i; j++) { // spaces
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= i; k++) { // spaces
+                System.out.print(i + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    /*
+     * - - - - * * * *
+     * - - - * * *
+     * - - * * *
+     * - * * *
+     */
+    public static void pattern13(int n) {
+        for (int i = 1; i <= n; i++) { // outer loop
+            for (int j = 1; j <= n - i; j++) { // spaces
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= n; k++) { // spaces
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    /*
+     * - - - - 1
+     * - - - 2 1 2
+     * - - 3 2 1 2 3
+     * - 4 3 2 1 2 3 4
+     * 5 4 3 2 1 2 3 4 5
+     */
+    public static void pattern14(int n) {
+        for (int i = 1; i <= n; i++) {
+            // Print leading dashes ("- ")
+            for (int j = i; j < n; j++) {
+                System.out.print(" ");
+            }
+
+            // Print decreasing numbers from i to 1
+            for (int j = i; j >= 1; j--) {
+                System.out.print(j + "");
+            }
+
+            // Print increasing numbers from 2 to i
+            for (int j = 2; j <= i; j++) {
+                System.out.print(j + "");
+            }
+
+            System.out.println(); // Move to next line
+        }
+    }
+
     public static void main(String[] args) {
         int num = 4;
         pattern1(num);
@@ -220,5 +285,11 @@ public class patternPractice {
         pattern10(5);
         System.out.println();
         pattern11(5);
+        System.out.println();
+        pattern12(5);
+        System.out.println();
+        pattern13(4);
+        System.out.println();
+        pattern14(5);
     }
 }
