@@ -22,12 +22,12 @@ public class _17_GFG_Longest_SubArrayWithSumK {
     }
 
     // Time Complexity: O(n^2).
-    public static int getLongestSubarray2(int[] a, long k) {
+    public static int getLongestSubarray2(int[] a, int k) {
         int n = a.length; // size of the array.
 
         int len = 0;
         for (int i = 0; i < n; i++) { // starting index
-            long s = 0; // Sum variable
+            int s = 0; // Sum variable
             for (int j = i; j < n; j++) { // ending index
                 // add the current element to
                 // the subarray a[i...j-1]:
@@ -41,9 +41,9 @@ public class _17_GFG_Longest_SubArrayWithSumK {
     }
 
     public static void main(String[] args) {
-        int[] a = { 10, 5, 2, 7, 1, -10 };
-        long k = 15;
-        int len = getLongestSubarray(a, k);
+        int[] arr = { 2, 3, 5, 10 };
+        int k = 5;
+        int len = getLongestSubarray2(arr, k);
         System.out.println("The length of the longest subarray is: " + len);
     }
 }

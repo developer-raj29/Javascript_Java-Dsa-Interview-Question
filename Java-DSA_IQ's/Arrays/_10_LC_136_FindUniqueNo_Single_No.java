@@ -19,7 +19,7 @@ public class _10_LC_136_FindUniqueNo_Single_No {
      */
 
     public static void main(String[] args) {
-        int nums[] = { 4, 1, 2, 1, 2, 4, 3 };
+        int nums[] = { 4, 1, 1, 2, 2, 4, 3 };
         System.out.println(singleNumber(nums)); // 4
     }
 }

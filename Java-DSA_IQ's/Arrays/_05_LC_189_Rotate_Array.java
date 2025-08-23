@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class _05_LC_189_Rotate_Array {
     public static void rotate(int[] nums, int k) {
         k = k % nums.length;
+        // System.out.println("K" + k);
         reverse(nums, 0, nums.length - 1);
         reverse(nums, 0, k - 1);
         reverse(nums, k, nums.length - 1);
@@ -48,7 +49,10 @@ public class _05_LC_189_Rotate_Array {
 
         Scanner sc = new Scanner(System.in);
 
+        System.out.print("Enter the size of array: ");
         int input = sc.nextInt();
+
+        System.out.print("Enter the rotated index of array: ");
         int k = sc.nextInt();
 
         int arr[] = new int[input];

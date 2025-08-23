@@ -10,7 +10,6 @@ public class _12_1877_Minimize_Maximum_Pair_Sum_in_Array {
             int pairSum = nums[i] + nums[n - 1 - i]; // Step 2: Pair smallest with largest
             maxPairSum = Math.max(maxPairSum, pairSum); // Step 3: Track the maximum pair sum
         }
-
         return maxPairSum;
     }
 
@@ -37,6 +36,5 @@ public class _12_1877_Minimize_Maximum_Pair_Sum_in_Array {
 
         int[] nums2 = { 4, 1, 5, 1, 2, 5, 4, 3 };
         System.out.println(minPairSum(nums2)); // Output: 7
-
     }
 }

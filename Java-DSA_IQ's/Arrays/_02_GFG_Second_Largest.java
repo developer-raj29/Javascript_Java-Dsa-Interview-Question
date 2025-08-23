@@ -19,12 +19,15 @@ public class _02_GFG_Second_Largest {
     public static void main(String[] args) {
         // int N = 6;
         // int Arr[] = { 12, 35, 1, 10, 34, 1 };
-        int N = 3;
-        int Arr[] = { 10, 10, 10 };
+        // int N = 3;
+        // int Arr[] = { 10, 10, 10 };
+        int N = 5;
+        int Arr[] = { 1, 8, 7, 56, 90 };
 
         // System.out.println(print2largest(Arr, N));
-        System.out.println("The largest element of the array is 35 and the second largest element is " + print2largest(
-                Arr, N));
+        System.out
+                .println("The largest element of the array is 35 and\n the second largest element is " + print2largest(
+                        Arr, N));
     }
 }
 
